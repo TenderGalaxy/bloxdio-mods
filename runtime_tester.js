@@ -27,9 +27,9 @@ tu = {
     while(tu.i--){;}
     tu.t = 0
     while(true){
-      tu.i = 4999
+      tu.i = 4997
       while(tu.i--){;}
-      tu.t++
+      eval('tu.t=0,tu.t++' + ',tu.t++'.repeat(1000))
     }
   },
   get(){
@@ -39,7 +39,6 @@ tu = {
 for(let i = 0; i < 12; i++){
   tu.a = tu.a.concat(tu.a)
 }
-tu.ex = 'tu.t=0,tu.t++' + ',tu.t++'.repeat(101000)
 /*
 Code Block 1:
 tu.func = (FUNCTION)
